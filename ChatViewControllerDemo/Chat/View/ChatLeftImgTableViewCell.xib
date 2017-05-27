@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="ChatLeftImgTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1" translatesAutoresizingMaskIntoConstraints="NO" id="HcL-vf-wjt">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Wtk-Lj-HwP"/>
+                            <constraint firstAttribute="width" constant="40" id="hVf-5F-yST"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VvM-rY-fGH">
+                        <rect key="frame" x="60" y="10" width="200" height="119.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="119.5" id="Co1-hm-rWB"/>
+                            <constraint firstAttribute="width" constant="200" id="fo3-Ez-4rM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="VvM-rY-fGH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="I4f-eo-dHZ"/>
+                    <constraint firstItem="VvM-rY-fGH" firstAttribute="leading" secondItem="HcL-vf-wjt" secondAttribute="trailing" constant="10" id="eEE-3Y-rJm"/>
+                    <constraint firstItem="HcL-vf-wjt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="f93-Ss-9kH"/>
+                    <constraint firstAttribute="bottom" secondItem="VvM-rY-fGH" secondAttribute="bottom" constant="10" id="m37-eZ-fhE"/>
+                    <constraint firstItem="HcL-vf-wjt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="y8n-F4-v7Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="icon" destination="HcL-vf-wjt" id="uBe-Ke-fTK"/>
+                <outlet property="imgHeight" destination="Co1-hm-rWB" id="0Rg-wK-Cfy"/>
+                <outlet property="imgView" destination="VvM-rY-fGH" id="1tr-zM-hwc"/>
+                <outlet property="imgWidth" destination="fo3-Ez-4rM" id="tBz-qo-Vpt"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="166"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon1" width="200" height="200"/>
+    </resources>
+</document>
